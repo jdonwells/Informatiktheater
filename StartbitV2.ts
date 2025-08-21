@@ -251,6 +251,12 @@ const font8x3 = hex`
     0000484830484800 0000484848381060 0000780830407800 1820206020201800
     1010100010101000 3008080C08083000 2850000000000000`;
 
+  let handleCmd: string = "";
+  let currentVoltage: number = 0;
+
+  let MESSAGE_MAC = 0xff;
+  let MESSAGE_ANGLE = 0x100;
+
 /*
  Informatiktheater package
 */
@@ -1332,12 +1338,6 @@ namespace informatiktheater {
     basic.pause(2000);
     console.log("Informatiktheater initialized");
   }
-
-  let handleCmd: string = "";
-  let currentVoltage: number = 0;
-
-  let MESSAGE_MAC = 0xff;
-  let MESSAGE_ANGLE = 0x100;
 
   function getHandleCmd() {
     let charStr: string = serial.readString();
