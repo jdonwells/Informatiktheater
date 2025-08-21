@@ -1330,7 +1330,7 @@ namespace informatiktheater {
     serial.redirect(SerialPin.P12, SerialPin.P8, BaudRate.BaudRate115200);
 
     basic.forever(() => {
-      getHandleCmd();
+      //getHandleCmd();
       if (0 < currentVoltage && currentVoltage < 6800) {
         music.playTone(988, music.beat(BeatFraction.Whole));
       }
