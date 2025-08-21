@@ -1,4 +1,7 @@
 // Auto init hiwonder board when extension is added
+
+let handleCmd: string = "";
+let currentVoltage: number = 0;
 informatiktheater.startbit_Init();
 
 /**
@@ -250,9 +253,6 @@ const font8x3 = hex`
     0020782020281000 0000484848582800 0000444444281000 00004444547C2800
     0000484830484800 0000484848381060 0000780830407800 1820206020201800
     1010100010101000 3008080C08083000 2850000000000000`;
-
-  let handleCmd: string = "";
-  let currentVoltage: number = 0;
 
   let MESSAGE_MAC = 0xff;
   let MESSAGE_ANGLE = 0x100;
